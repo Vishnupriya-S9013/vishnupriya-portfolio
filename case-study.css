@@ -1,0 +1,129 @@
+/* Case study page. Uses the nav, contact and variables from style.css */
+.cs-wrap{max-width:1289px;margin:0 auto;padding:0 2rem}
+.cs-h{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:clamp(2.4rem,4.2vw,3.6rem);letter-spacing:.01em;line-height:1}
+.cs-h--center{text-align:center}
+.cs-h--gap{margin-top:5rem}
+.cs-sub{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:2.2rem;text-align:center;margin-bottom:2rem}
+section{position:relative}
+
+/* HERO */
+.cs-hero{position:relative;max-width:1365px;aspect-ratio:1365/1089;margin:0 auto 6rem;overflow:visible}
+.cs-hero__black{position:absolute;left:0;top:0;width:31.1%;height:100%;background:#000}
+.cs-hero__phone{position:absolute;left:12.2%;top:18.3%;width:38%;height:62.3%;object-fit:cover;background:#bdbdbd}
+.cs-hero__title{position:absolute;left:52.7%;top:18.3%;display:flex;gap:1.6rem;flex-direction:column;max-width:41%}
+.cs-hero__title::before{content:"";position:absolute;left:-1.6rem;top:0;width:2px;height:100%;background:#222}
+.cs-hero__title h1{font-family:'Be Vietnam Pro',var(--font-body);font-weight:500;font-size:var(--hero-h1,clamp(2.6rem,6.4vw,5.5rem));line-height:1.05}
+.cs-hero__title h1 span{color:#7a5a45}
+.cs-hero__title p{font-family:'Be Vietnam Pro',var(--font-body);font-style:italic;color:#777;font-size:clamp(.9rem,1.5vw,1.3rem);line-height:1.45;max-width:26rem}
+.cs-hero__block{position:absolute;left:71.3%;top:54.2%;width:28.6%;height:45.3%;background:#000}
+.cs-hero__carving{position:absolute;left:67.1%;top:49.4%;width:28.7%;height:45.3%;object-fit:cover}
+.cs-hero__label{position:absolute;left:1.5%;bottom:2%;font-family:var(--font-body);font-weight:600;font-size:clamp(2.2rem,5vw,4.6rem);color:rgba(130,130,130,.35);white-space:nowrap;z-index:2}
+
+/* OVERVIEW */
+.cs-overview{margin-bottom:6rem}
+.cs-overview .cs-h{margin-bottom:2.4rem}
+.cs-overview__text{text-align:justify;font-size:clamp(1rem,1.5vw,1.35rem);line-height:1.8;color:#9a9a9a}
+.cs-overview__text b{font-weight:400;color:#222}
+.cs-facts{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem 2rem;margin-top:5rem;padding:2.4rem 3rem;border:2px dashed #222;border-right:0}
+.cs-facts dl{display:flex;gap:.5rem;font-size:.95rem}
+.cs-facts dt{font-weight:600}
+.cs-facts__pin{position:absolute;right:-14px;bottom:-14px;background:#fff;color:#111}
+
+/* PROBLEM */
+.cs-problem{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;margin-bottom:8rem}
+.cs-problem__photo{width:100%;aspect-ratio:628/929;object-fit:cover;border-radius:4px;background:#e8e4dd}
+.cs-problem__body .cs-h{margin-bottom:2rem}
+.cs-problem__body>p{font-size:1.05rem;line-height:1.7;max-width:36rem}
+.cs-pains{display:grid;gap:1.4rem;margin-top:3rem}
+.cs-pains li{display:flex;align-items:center;gap:1rem;font-size:.9rem;color:#555;animation:float 5s ease-in-out infinite}
+.cs-pains li.r{justify-content:flex-end}
+.cs-pains li.l{justify-content:flex-start}
+.cs-pains li:nth-child(even){animation-delay:-2.5s}
+.cs-pains i{display:grid;place-items:center;width:5.2rem;height:5.2rem;border-radius:16px;background:#fff;box-shadow:0 8px 22px rgba(0,0,0,.14)}
+.cs-pains i img{width:55%;height:55%;object-fit:contain}
+
+/* USERS + PAIN POINTS */
+.cs-users{display:grid;grid-template-columns:1fr 90px;gap:2rem;margin-bottom:8rem;align-items:stretch}
+.cs-users__text>p{margin-top:1.6rem;font-size:1.05rem;max-width:44rem}
+.cs-list{margin-top:2rem;display:grid;gap:1.1rem;font-size:1.05rem}
+.cs-route{width:60px;height:100%;min-height:380px;justify-self:end;overflow:visible}
+
+/* DESIGN DIRECTION */
+.cs-design{margin-bottom:8rem}
+.cs-center{text-align:center;margin-bottom:5rem}
+.cs-center hr{width:min(289px,60%);border:0;border-top:2px solid #222;margin:1rem auto 1.6rem}
+.cs-center p{font-size:clamp(1rem,1.6vw,1.05rem);max-width:60rem;margin:0 auto}
+.cs-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:5rem}
+.cs-phone{width:min(100%,400px);height:auto;margin-inline:auto}
+.cs-type__big{font-family:'Abhaya Libre',serif;font-weight:800;font-size:clamp(2.4rem,4.4vw,4rem);text-align:center;margin-bottom:1.6rem}
+.cs-type__weights{display:flex;justify-content:space-around;font-family:'Abhaya Libre',serif;font-weight:800;font-size:clamp(1.2rem,2.2vw,1.6rem)}
+.cs-type__weights .w4{font-weight:400}.cs-type__weights .w6{font-weight:600}.cs-type__weights .w7{font-weight:700}
+.cs-colors__dots{display:flex;flex-wrap:wrap;justify-content:center;gap:1.2rem;max-width:30rem;margin:0 auto}
+.cs-colors__dots i{display:block;width:clamp(5rem,9vw,8.6rem);aspect-ratio:1;border-radius:50%;background:var(--c);box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.cs-comp img{width:100%;max-width:440px;margin-inline:auto;border-radius:6px}
+
+/* SOLUTIONS */
+.cs-solutions{margin-bottom:8rem}
+.cs-solutions .cs-h{margin-bottom:4rem}
+.cs-solutions__grid{position:relative;max-width:910px;margin:0 auto}
+.cs-solutions__strip{position:absolute;left:-2rem;top:0;width:206px;height:100%;object-fit:cover;border-radius:999px;z-index:0;background:#e8e4dd}
+.cs-solutions ol{position:relative;z-index:1;list-style:none;display:grid;gap:4.6rem}
+.cs-solutions li{display:flex;align-items:center;gap:2.6rem}
+.cs-solutions li b{flex:none;display:grid;place-items:center;width:150px;height:150px;border-radius:50%;background:rgba(0,0,0,.88);box-shadow:0 10px 34px rgba(0,0,0,.35);font-family:var(--font-body);font-weight:400;font-size:3rem;color:#fff}
+.cs-solutions h3{font-weight:400;font-size:clamp(1.4rem,2.2vw,2rem);margin-bottom:.6rem}
+.cs-solutions p{color:#666;font-size:1rem}
+
+/* USER FLOW */
+.cs-flow{margin-bottom:8rem;text-align:center}
+.cs-flow .cs-h{margin-bottom:3rem}
+.cs-flow img{margin-inline:auto;max-width:50%}
+
+/* UI SCREENS */
+.cs-screens{margin-bottom:8rem}
+.cs-screens .cs-h{margin-bottom:4rem}
+.cs-screen{display:grid;grid-template-columns:395px 1fr;gap:3rem;align-items:center;justify-items:start;margin-bottom:3rem}
+.cs-screen--flip{grid-template-columns:1fr 395px;justify-items:end}
+.cs-screen img{width:395px;max-width:100%;height:auto}
+.cs-screen div{max-width:43rem}
+.cs-screen b{display:inline-grid;place-items:center;width:78px;height:84px;border:1.5px solid #222;border-radius:6px;font-family:var(--font-display);font-weight:400;font-size:2.6rem;margin-right:.9rem;vertical-align:middle}
+.cs-screen h3{display:inline;font-family:var(--font-body);font-weight:300;font-size:clamp(1.6rem,3vw,2.6rem);vertical-align:middle}
+.cs-screen p{margin-top:1.6rem;font-size:1rem;line-height:1.7;color:#444}
+
+/* FINAL UI */
+.cs-final{margin-bottom:8rem}
+.cs-final .cs-h{margin-bottom:3rem}
+.cs-final__box{background:#e9e9e900;border-radius:6px;padding:4rem 2rem 3rem;text-align:center}
+.cs-final__box img{margin-inline:auto;max-width:100%}
+.cs-final__box p{margin-top:0.4rem;font-family:var(--font-body);font-weight:300;font-size:clamp(2rem,4.4vw,3.6rem);text-transform:uppercase;letter-spacing:.04em}
+
+/* OTHER PROJECTS */
+.cs-more{margin-bottom:6rem}
+.cs-more .cs-h{margin-bottom:4rem}
+.cs-more img{border-radius:14px;object-fit:cover;background:#e9e6f4}
+.cs-more__a{display:grid;grid-template-columns:539px 1fr;gap:3rem;margin-bottom:5rem;align-items:start}
+.cs-more__a>img{width:100%;aspect-ratio:539/454}
+.cs-more__a .project__text{margin-bottom:2rem}
+.cs-more__a a img{width:100%;aspect-ratio:701/418}
+.cs-more__b{display:grid;grid-template-columns:1fr 242px;gap:3rem;align-items:end}
+.cs-more__b a img{width:100%;aspect-ratio:889/593}
+.cs-more .project__no{display:block;font-size:.72rem;color:var(--muted);margin-bottom:.5rem}
+.cs-more .project__text h3{font-weight:300;font-size:clamp(1.8rem,2.7vw,2.6rem);line-height:1.1}
+.cs-more .project__text em{display:block;margin-top:.7rem;font-size:.72rem;color:var(--muted)}
+
+@keyframes float{50%{transform:translateY(-6px)}}
+
+/* RESPONSIVE */
+@media (max-width:860px){
+  .cs-wrap{padding:0 1.2rem}
+  .cs-hero{margin-bottom:3rem}
+  .cs-facts{grid-template-columns:1fr 1fr;padding:1.6rem 1.2rem}
+  .cs-problem,.cs-row,.cs-more__a,.cs-more__b{grid-template-columns:1fr}
+  .cs-users{grid-template-columns:1fr}
+  .cs-route{display:none}
+  .cs-row--flip .cs-colors{order:-1}
+  .cs-solutions li{gap:1.2rem}.cs-solutions li b{width:90px;height:90px;font-size:1.8rem}.cs-solutions__strip{display:none}
+  .cs-solutions li b{background:#e8e4dd;color:#262626;border-color:#cfc8bd}
+  .cs-screen,.cs-screen--flip{grid-template-columns:1fr;justify-items:start}
+  .cs-screen--flip img{order:-1}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

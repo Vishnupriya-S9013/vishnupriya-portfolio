@@ -1,0 +1,18 @@
+/* Extra styles for the CareerNest case study (loaded after case-study.css) */
+.cs-hero--career .cs-hero__title h1{color:#000}
+.cs-hero--career .cs-hero__title h1 span{display:block;font-size:.625em;color:#494495;margin-top:.1em}
+.cs-hero--career .cs-hero__phone{background:transparent;object-fit:contain}
+
+.cs-palette{display:flex;flex-wrap:wrap;justify-content:center;gap:1.1rem;max-width:30rem;margin-inline:auto}
+.cs-palette i{display:block;width:clamp(5rem,9vw,8.6rem);aspect-ratio:1;border-radius:50%;background:var(--c);box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.cs-palette i:nth-child(even){border-radius:48% 52% 50% 50% / 52% 48% 50% 50%}
+
+.cs-type__big{font-family:'Zen Maru Gothic',sans-serif!important;font-weight:700!important}
+.cs-type__weights{font-family:'Zen Maru Gothic',sans-serif!important;font-weight:400!important}
+.cs-type__weights .w4{font-weight:400}.cs-type__weights .w6{font-weight:500}.cs-type__weights .w7{font-weight:700}
+
+.cs-solution{margin-bottom:8rem}
+.cs-solution .cs-h{margin-bottom:2.4rem}
+.cs-solution__lead{font-size:1.05rem;line-height:1.8;max-width:69rem}
+.cs-solution__points{margin-top:2.2rem;max-width:62rem;padding-left:1.4rem;display:grid;gap:1rem;font-size:1.05rem;line-height:1.8;color:#555}
+.cs-solution__points li::marker{color:#494495}
