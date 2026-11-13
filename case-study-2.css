@@ -1,0 +1,37 @@
+/* Temple City case study only (loaded after case-study.css) */
+
+/* Design Direction inside headings use the same font as the Key Features headings */
+.cs-design .cs-sub{font-family:var(--font-body);font-weight:330;text-transform:none;font-size:clamp(1.4rem,2.2vw,2rem)}
+
+/* PHONES ONLY (600px and below). Tablet and desktop are not affected. */
+@media (max-width:600px){
+  /* Hero: phone image on the left, text on the right, no black shapes */
+  .cs-hero{aspect-ratio:auto;display:grid;grid-template-columns:42% 1fr;grid-template-rows:auto 1fr;gap:.6rem 1.4rem;align-items:start;padding:5.2rem 1.2rem 0;margin-bottom:3rem}
+  .cs-hero__black,.cs-hero__block,.cs-hero__carving{display:none}
+  .cs-hero__phone{position:static;grid-column:1;grid-row:1/3;width:100%;height:auto;aspect-ratio:517/678;object-fit:cover}
+  .cs-hero__label{position:static;grid-column:2;grid-row:1;align-self:end;font-size:.95rem;white-space:normal;color:rgba(130,130,130,.6)}
+  .cs-hero__title{position:relative;grid-column:2;grid-row:2;left:auto;top:auto;max-width:none;gap:.8rem;padding-left:.3rem}
+  .cs-hero__title::before{left:-.8rem}
+  .cs-hero__title h1{font-size:1.7rem}
+  .cs-hero__title p{font-size:.8rem;line-height:1.45}
+
+  /* Problem: no photo */
+  .cs-problem__photo{display:none}
+
+  /* Design direction: no underline, space under the heading, no phone images */
+  .cs-center hr{display:none}
+  .cs-center .cs-h{margin-bottom:2.5rem}
+  .cs-phone{display:none}
+
+  /* UI screens: 4 images in one row on a black rectangle, descriptions below */
+  .cs-screens{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem}
+  .cs-screens .cs-h{grid-column:1/-1;grid-row:1;margin-bottom:2.2rem}
+  .cs-screens::before{content:"";grid-column:1/-1;grid-row:2;background:#000;border-radius:14px;margin:-.7rem}
+  .cs-screens .cs-screen{display:contents}
+  .cs-screens .cs-screen img{position:relative;z-index:1;width:100%;height:auto;grid-row:2}
+  .cs-screens .cs-screen:nth-of-type(1) img{grid-column:1}
+  .cs-screens .cs-screen:nth-of-type(2) img{grid-column:2}
+  .cs-screens .cs-screen:nth-of-type(3) img{grid-column:3}
+  .cs-screens .cs-screen:nth-of-type(4) img{grid-column:4}
+  .cs-screens .cs-screen div{grid-column:1/-1;max-width:none;margin-top:1.6rem}
+}
