@@ -109,6 +109,8 @@ ul{list-style:none}
 .contact__cta:hover b{width:15rem}
 .contact__cta em{font-size:.8rem}
 
+
+
 /* RESPONSIVE */
 @media (max-width:860px){
   .nav{padding:.7rem 1.2rem}.nav__links{gap:1rem;position:static;transform:none}.nav__logo{display:none}
@@ -128,6 +130,30 @@ ul{list-style:none}
   .contact{margin:0 1.2rem 1.2rem;padding:2rem 1.4rem}
   .contact__social{position:static;display:flex;margin-top:1.6rem}
 }
+
+/* PHONES ONLY (600px and below). Tablet and desktop are not affected. */
+@media (max-width:600px){
+  /* Hero: hide badge, "Hey, there" and role; intro text goes above the head */
+  .hero__badge,.hero__hey,.hero__role{display:none}
+  .hero__intro{left:50%;right:auto;top:12%;transform:translateX(-50%);width:84%;max-width:17rem;text-align:center;color:#777;font-size:.8rem;line-height:1.5}
+  .hero__name{font-size:min(5rem,17.5vw)}
+
+  /* Featured projects: only the small image + name; project 3 matches the others */
+  .project{position:relative;gap:1rem;margin-bottom:3.5rem}
+  .project--a .project__link,.project--b .project__link{display:none}
+  .project__small{width:100%;aspect-ratio:4/4.3;object-fit:cover}
+  .project--c .project__large{width:100%;aspect-ratio:4/4.3;object-fit:cover}
+  .project__text h3{font-size:1.7rem}
+  .project__text h3 a::after{content:"";position:absolute;inset:0;z-index:2}
+
+  /* About: heading above the photo */
+  .about{gap:1.6rem}
+  .about__text{display:contents}
+  .about__text .title{order:-1;margin-bottom:0}
+  .about__text p{max-width:none}
+  .about__facts{margin-top:.8rem}
+}
+
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
