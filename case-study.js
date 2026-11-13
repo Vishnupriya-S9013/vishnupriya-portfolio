@@ -10,10 +10,12 @@
     y: to, ease: 'none',
     scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true }
   });
-  par('.cs-hero__phone', 0, -90);
-  par('.cs-hero__title', 0, -50);
-  par('.cs-hero__carving', 0, -170);
-  par('.cs-hero__block', 0, -120);
+    if (!window.matchMedia('(max-width:600px)').matches) {
+    par('.cs-hero__phone', 0, -90);
+    par('.cs-hero__title', 0, -50);
+    par('.cs-hero__carving', 0, -170);
+    par('.cs-hero__block', 0, -120);
+  }
 
   /* 2. "Case Study 02" fades in as it scrolls into view */
   gsap.from('.cs-hero__label', {
