@@ -3,7 +3,7 @@
 .cs-h{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:clamp(2.4rem,4.2vw,3.6rem);letter-spacing:.01em;line-height:1}
 .cs-h--center{text-align:center}
 .cs-h--gap{margin-top:5rem}
-.cs-sub{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:2.2rem;text-align:center;margin-bottom:2rem}
+.cs-sub{font-family:var(--font-display);font-weight:300;text-transform:uppercase;font-size:1.6rem;text-align:center;margin-bottom:3.5rem}
 section{position:relative}
 
 /* HERO */
@@ -58,9 +58,9 @@ section{position:relative}
 .cs-type__big{font-family:'Abhaya Libre',serif;font-weight:800;font-size:clamp(2.4rem,4.4vw,4rem);text-align:center;margin-bottom:1.6rem}
 .cs-type__weights{display:flex;justify-content:space-around;font-family:'Abhaya Libre',serif;font-weight:800;font-size:clamp(1.2rem,2.2vw,1.6rem)}
 .cs-type__weights .w4{font-weight:400}.cs-type__weights .w6{font-weight:600}.cs-type__weights .w7{font-weight:700}
-.cs-colors__dots{display:flex;flex-wrap:wrap;justify-content:center;gap:1.2rem;max-width:30rem;margin:0 auto}
-.cs-colors__dots i{display:block;width:clamp(5rem,9vw,8.6rem);aspect-ratio:1;border-radius:50%;background:var(--c);box-shadow:0 4px 14px rgba(0,0,0,.12)}
-.cs-comp img{width:100%;max-width:440px;margin-inline:auto;border-radius:6px}
+.cs-colors__dots{display:flex;flex-wrap:wrap;justify-content:center;gap:1.2rem;max-width:20rem;margin:0 auto}
+.cs-colors__dots i{display:block;width:clamp(3rem,9vw,8.6rem);aspect-ratio:1;border-radius:50%;background:var(--c);box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.cs-comp img{width:66%;max-width:440px;margin-inline:auto;border-radius:6px}
 
 /* SOLUTIONS */
 .cs-solutions{margin-bottom:8rem}
@@ -69,14 +69,14 @@ section{position:relative}
 .cs-solutions__strip{position:absolute;left:-2rem;top:0;width:206px;height:100%;object-fit:cover;border-radius:999px;z-index:0;background:#e8e4dd}
 .cs-solutions ol{position:relative;z-index:1;list-style:none;display:grid;gap:4.6rem}
 .cs-solutions li{display:flex;align-items:center;gap:2.6rem}
-.cs-solutions li b{flex:none;display:grid;place-items:center;width:150px;height:150px;border-radius:50%;background:rgba(0,0,0,.88);box-shadow:0 10px 34px rgba(0,0,0,.35);font-family:var(--font-body);font-weight:400;font-size:3rem;color:#fff}
-.cs-solutions h3{font-weight:400;font-size:clamp(1.4rem,2.2vw,2rem);margin-bottom:.6rem}
+.cs-solutions li b{flex:none;display:grid;place-items:center;width:90px;height:90px;border-radius:50%;background:rgba(0,0,0,.88);box-shadow:0 10px 34px rgba(0,0,0,.35);font-family:var(--font-body);font-weight:400;font-size:2rem;color:#fff}
+.cs-solutions h3{font-weight:330;font-size:clamp(1.4rem,2.2vw,2rem);margin-bottom:.6rem}
 .cs-solutions p{color:#666;font-size:1rem}
 
 /* USER FLOW */
 .cs-flow{margin-bottom:8rem;text-align:center}
 .cs-flow .cs-h{margin-bottom:3rem}
-.cs-flow img{margin-inline:auto;max-width:50%}
+.cs-flow img{margin-inline:auto;max-width:80%}
 
 /* UI SCREENS */
 .cs-screens{margin-bottom:8rem}
@@ -125,5 +125,15 @@ section{position:relative}
   .cs-solutions li b{background:#e8e4dd;color:#262626;border-color:#cfc8bd}
   .cs-screen,.cs-screen--flip{grid-template-columns:1fr;justify-items:start}
   .cs-screen--flip img{order:-1}
+}
+/* PHONES ONLY: "View my other projects" shows small images + names, whole card is tappable */
+@media (max-width:600px){
+  .cs-more article{position:relative;display:block;margin-bottom:2.4rem}
+  .cs-more__a>img,.cs-more__b a img{width:100%;aspect-ratio:4/4.3;object-fit:cover}
+  .cs-more__a div>a{display:block;position:absolute;inset:0;z-index:2}
+  .cs-more__a div>a img{display:none}
+  .cs-more__b a::after{content:"";position:absolute;inset:0;z-index:2}
+  .cs-more .project__text{margin:1rem 0 0}
+  .cs-more .project__text h3{font-size:1.7rem}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
