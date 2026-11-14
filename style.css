@@ -135,6 +135,7 @@ ul{list-style:none}
 @media (max-width:600px){
   /* Hero: hide badge, "Hey, there" and role; intro text goes above the head */
   .hero__badge,.hero__hey,.hero__role{display:none}
+  .hero{height:calc(100vh - 2.4rem);height:calc(100svh - 2.4rem);min-height:480px}
   .hero__intro{left:50%;right:auto;top:12%;transform:translateX(-50%);width:84%;max-width:17rem;text-align:center;color:#777;font-size:.8rem;line-height:1.5}
   .hero__name{font-size:min(5rem,17.5vw)}
 
